@@ -7,11 +7,14 @@ If you want to train a model with 'N' bits, use the following command:
 python main.py --dataset cifar10 --arch vgg16_quan --quan_bitwidth 8 --reset_weight --pretrained False 
 ```
 ## pretrain 
-If you have a pre-trained model, locate the model.pth file in the pretrain_model folder and run: 
+If you have a pre-trained model, locate the model.pth file in the pretrain_models folder and run: 
 ```
 python main.py --dataset cifar10 --arch vgg16_quan --quan_bitwidth 8 --reset_weight --pretrained True 
 ```
 This command saves the fixed point weights in the 'save' folder layer by layer. The code test for VGG16 and the layer weights exist in the 'save' folder. The accuracy of fixe point VGG16 on Cifar10 is 84.80.
+
+Download the VGG16 pre-trained model from the following link :
+* [https://www.dropbox.com/s/nkrmnql07c8y09b/vgg16_quan.pth?dl=0]
 # Contributors
 
 the code in this repository is based on the following amazing works:
