@@ -7,7 +7,7 @@ If you want to train a model with 'N' bits, use the following command:
 python main.py --dataset cifar10 --arch vgg16_quan --quan_bitwidth 8 --reset_weight --pretrained False 
 ```
 ## pretrain 
-If you have a pre-trained model, locate the model.pth file in the model folder and run: 
+If you have a pre-trained model, locate the model.pth file in the pretrain_model folder and run: 
 ```
 python main.py --dataset cifar10 --arch vgg16_quan --quan_bitwidth 8 --reset_weight --pretrained True 
 ```
